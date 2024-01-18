@@ -1,0 +1,93 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+}
+.container {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 50px auto;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 10px 10px 40px rgba(127, 120, 146, 0.09);
+}
+form {
+  display: flex;
+  align-items: stretch;
+  height: 60px;
+  gap: 10px;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0 20px;
+}
+.city-input {
+  background-color: #f9f7fe;
+  width: 75%;
+}
+.button {
+  color: #ffffff;
+  background-color: #885df1;
+}
+
+header,
+main {
+  border-bottom: 1px solid #f9f7fe;
+  padding-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.details {
+  font-size: 16px;
+  color: #a8a6b4;
+  line-height: 24px;
+  font-weight: 400;
+}
+.details strong {
+  font-weight: 600;
+  color: #f65282;
+}
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.current-temperature {
+  display: flex;
+  align-items: center;
+}
+.current-temperature-icon {
+  font-size: 45px;
+  position: relative;
+  top: 5px;
+  margin: 10px;
+}
+.current-temperature-value {
+  font-size: 80px;
+  font-weight: 600;
+}
+.current-temperature-unit {
+  font-size: 26px;
+  font-weight: 500;
+  position: relative;
+  bottom: 20px;
+}
+
+footer p {
+  font-size: 14px;
+  color: #a8a6b4;
+  line-height: 14px;
+  font-weight: 400;
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+a {
+  color: #885df1;
+}
