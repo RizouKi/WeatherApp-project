@@ -62,11 +62,11 @@ h1 {
   display: flex;
   align-items: center;
 }
-.current-temperature-icon {
-  font-size: 45px;
+.current-temperature img {
+  width: 80px;
+  height: 80px;
   position: relative;
   top: 5px;
-  margin: 10px;
 }
 .current-temperature-value {
   font-size: 80px;

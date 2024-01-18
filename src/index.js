@@ -3,12 +3,35 @@ function displayWeather(response) {
   let currentTemperatureValueElement = document.querySelector(
     ".current-temperature-value"
   );
+
   let city = response.data.city;
   let cityElement = document.querySelector(".current-city");
 
+  let weatherDescription = response.data.condition.description;
+  let weatherDescriptionElement = document.querySelector(
+    ".weather-description"
+  );
+
+  let humidity = response.data.temperature.humidity;
+  let humidityElement = document.querySelector(".humidity");
+
+  let wind = response.data.wind.speed;
+  let windElement = document.querySelector(".wind");
+
+  let weatherIconName = response.data.condition.icon;
+  let weatherIconURL = response.data.condition.icon_url;
+  let weatherIconElement = document.querySelector(".current-temperature img");
+
   cityElement.innerHTML = city;
   currentTemperatureValueElement.innerHTML = currentTemperature;
+  weatherDescriptionElement.innerHTML = weatherDescription;
+  humidityElement.innerHTML = humidity;
+  windElement.innerHTML = wind;
+
+  weatherIconElement.className = weatherIconName;
+  weatherIconElement.src = weatherIconURL;
 }
+
 function searchCity(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector(".city-input");
