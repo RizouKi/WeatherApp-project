@@ -31,7 +31,6 @@ function displayWeather(response) {
   weatherIconElement.className = weatherIconName;
   weatherIconElement.src = weatherIconURL;
 }
-
 function searchCity(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector(".city-input");
